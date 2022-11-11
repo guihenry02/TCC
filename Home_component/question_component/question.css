@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif
+
+}
+
+body {
+background-color: whitesmoke;
+display: flex;
+flex-direction: column;
+height: 1200px;}
+
+.navigation {
+    position: relative;
+    height: 1220px;
+    background: black;
+    width: 70px;
+    box-shadow: 5px 0 3px rgb(53, 52, 52);
+    border-left: 10px solid black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+
+      
+}
+
+
+
+.navigation ul {
+    list-style-type: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+
+.navigation ul li {
+    position: relative;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+}
+
+.navigation ul li a {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+
+}
+
+.navigation ul li a .icon {
+
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.navigation ul li a .icon ion-icon{
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+
+}
+
+.navigation ul li.active {
+    background: #110040;
+}
+
+.navigation ul li.active a::after {
+
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 15 -15 0 grey;
+}
+
+.middle {
+    display: flex;
+}
+
+.question {
+    width: 1300px;
+    height: 850px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 5px grey;
+
+}
+
+.header_question {
+
+    height: 80px;
+    width: 100%;
+    display: flex;
+    box-shadow: 3px 3px 3px grey;
+}
+
+.header_question h2 {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family: 'Playfair Display', serif
+    
+}
+
+.filter_tags {
+    display: flex;
+    margin-left: 25px;
+    width: 300px;
+    height: 80px;
+
+    
+    
+}
+
+.filter_tags h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17.5px;
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    width: 80px;
+    height: 30px;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 5px;
+     
+}
+
+.resources {
+    margin-left: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 200px;
+    height: 80px;
+}
+
+.resources ion-icon {
+    font-size: 30px;
+}
+
+.statement {
+    margin-top: 30px;
+    width: 1200px ;
+    height: 400px;
+  
+
+}
+
+.statement h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.question_group {
+    width: 1200px;
+    height: 280px;
+
+
+}
+ 
+.alternatives {
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+    font-family: 'Playfair Display', serif; ;
+    
+}
+
+.alternatives_radio {
+    width: 10px;
+    display: flex;
+    margin-right: 50px;
+}
+
+
+.alternatives_radio input {
+    display: none;
+}
+
+
+.radio_label::before {
+    content: '';
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: .3s ease-in-out;
+}
+
+.text {
+    margin-top: 7px;
+}
+
+.confirm {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1200px;
+    height: 200px;
+    padding-bottom: 50px;
+    
+}
+
+.confirm h2 {
+    font-weight: normal;
+    font-family: 'Playfair Display', serif; ;
+    width: 230px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: grey;
+    color: white;
+
+}
